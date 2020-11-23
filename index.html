@@ -139,7 +139,7 @@
     
       <!-- navbar-->
         <nav class="navbar navbar-expand-lg">
-<!--          <div class="container-fluid">-->
+          <div class="container-fluid">
             <div class="navbar-holder d-flex align-items-center justify-content-between">
                 
               <!-- navbar-header -->  
@@ -202,7 +202,7 @@
                     
               </ul>
             </div>
-<!--          </div>-->
+          </div>
         </nav>       
  
  
@@ -220,7 +220,43 @@
       
    <div class="container-fluid">  
   <div class="row">
-  <div class="col-lg-6 d-flex align-items-center">    
+  <div class="col-lg-6">
+      
+    <div class="count_breadcrumbs">
+ <ul id="questionList">
+  <li onclick="change(0)" id="q0" class="active">
+   <a href="javascript:void(0)">1</a></li>
+     <li onclick="change(1)" id="q1" class="active">
+   <a href="javascript:void(0)">2</a></li>
+     <li onclick="change(2)" id="q2" class="active">
+   <a href="javascript:void(0)">3</a></li>
+     <li onclick="change(3)" id="q3" class="active">
+   <a href="javascript:void(0)">4</a></li>
+     <li onclick="change(4)" id="q4" class="active">
+   <a href="javascript:void(0)">5</a></li>
+     <li onclick="change(5)" id="q5" class="active">
+   <a href="javascript:void(0)">6</a></li>
+     <li onclick="change(6)" id="q6" class="active">
+   <a href="javascript:void(0)">7</a></li>
+     <li onclick="change(7)" id="q7" class="active">
+   <a href="javascript:void(0)">8</a></li>    
+     <li onclick="change(8)" id="q8" class="active">
+   <a href="javascript:void(0)">9</a></li>
+     <li onclick="change(9)" id="q9" class="active">
+   <a href="javascript:void(0)">10</a></li>
+     <li onclick="change(10)" id="q10" class="active">
+   <a href="javascript:void(0)">11</a></li>
+     <li onclick="change(11)" id="q11" class="active">
+   <a href="javascript:void(0)">12</a></li>
+     <li onclick="change(12)" id="q12" class="active">
+   <a href="javascript:void(0)">13</a></li>
+    </ul>   
+    </div>  
+      
+      
+      
+      
+      
   <form method="POST" class="is-not-results">
 	<fieldset>
 		<legend>
@@ -286,10 +322,12 @@
 </div><!----end of column-----> 
   <div class="col-lg-2 empty"></div>     
  <div class="col-lg-4">
-              <div class="card bg-light" style="width:100%" >
+              <div class="card bg-light" style="width:100%">
                 <div class="card-body text-center">
-                 <h4 class="card-text">Exam Countdown</h4>
-                    <p id="timer" style="font-size: 28px;color: green;font-weight: 700"></p>
+               <div class="row d-flex align-items-self justify-content-between">
+               <div class="col-sm-7"><h5 class="card-text">Exam Countdown</h5></div>
+               <div class="col-sm-5"><p id="timer" style="font-size: 20px;color: green;font-weight: 700"></p></div>
+           </div>
 
                   <p>Total time of Exam: 0 Hours, 45 Min</p>
                  <h3 class="card-text">Questions:</h3>
